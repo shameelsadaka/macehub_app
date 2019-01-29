@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:macehub_app/f0.dart';
 import 'package:macehub_app/f1.dart';
-//import 'packages:badges/badges.dart';
-//import 'package:macehub_app/f3.dart';
+
 
 void main() => runApp(MyApp());
 
