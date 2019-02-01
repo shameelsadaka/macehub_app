@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:macehub_app/f0.dart';
 import 'package:macehub_app/f1.dart';
 
+//import 'packages:badges/badges.dart';
+//import 'package:macehub_app/f3.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,12 +39,11 @@ class MyHomePageState extends State<MyHomePage> {
         return new SecondF();
 
       case 2:
-        return new Container();
+        return new ThirdF();
       case 3:
-      //return new FourthF();
+        return new FourthF();
       case 4:
-      return new Container();
-
+        return new FifthF();
     }
   }
 
@@ -50,15 +51,16 @@ class MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 //Center(child: Text('My Page!')),
     return Scaffold(
-      appBar: AppBar(title: Text(title),
-      actions:<Widget>[
-        IconButton(icon:new Icon(Icons.notifications_none,color:Colors.white),
-        onPressed:(){
-         setState(() => p = 4);
-        },
-        
-        ),
-      ],
+      appBar: AppBar(
+        title: Text(title),
+        actions: <Widget>[
+          IconButton(
+            icon: new Icon(Icons.notifications_none, color: Colors.white),
+            onPressed: () {
+              setState(() => p = 4);
+            },
+          ),
+        ],
       ),
       //BadgeIconButton(itemCount:_counter)
       drawer: Drawer(
